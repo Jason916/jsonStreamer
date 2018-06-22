@@ -143,7 +143,7 @@ func (self *JsonStreamer) escapeStringValue(value *string) (result string) {
 	result = strings.Replace(result, "</", "<\\/", -1)
 	result = strings.Replace(result, "\b", "\\\b", -1)
 	result = strings.Replace(result, "\t", "\\\t", -1)
-	result = strings.Replace(result, "\n", "\\\n", -1)
+	result = strings.Replace(result, "\n", "", -1)
 	result = strings.Replace(result, "\f", "\\\f", -1)
 	result = strings.Replace(result, "\r", "\\\r", -1)
 	return
